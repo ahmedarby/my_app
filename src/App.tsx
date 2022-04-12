@@ -1,15 +1,11 @@
-import React, { FC, useId } from 'react';
+import React, { FC } from 'react';
+import AppRoutes from './routes';
 
 
 const App: FC = () => {
-    const id = useId();
-
-    console.log(id);
-    
-
     return (
         <React.StrictMode>
-            <h1>Hello World!</h1>
+            <AppRoutes />
         </React.StrictMode>
     );
 }
